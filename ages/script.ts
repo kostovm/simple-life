@@ -1,3 +1,5 @@
+console.log('Still works!')
+
 type Output = {
     text: string,
     icon: string

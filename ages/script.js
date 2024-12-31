@@ -1,4 +1,6 @@
-var outputs = {
+"use strict";
+console.log('Still works!');
+const outputs = {
     baby: { text: 'Baby', icon: 'fa-solid fa-baby' },
     child: { text: 'Child', icon: 'fa-solid fa-child' },
     teenager: { text: 'Teenager', icon: 'fa-solid fa-pizza-slice' },
@@ -7,27 +9,27 @@ var outputs = {
     outOfBound: "Age is out of bound!",
     emptyInput: "Enter age!"
 };
-var ageInput = document.getElementById('age');
-var sendButton = document.getElementById('send');
-var clearButton = document.getElementById('clear');
-var outputField = document.querySelector('.output-field');
+const ageInput = document.getElementById('age');
+const sendButton = document.getElementById('send');
+const clearButton = document.getElementById('clear');
+const outputField = document.querySelector('.output-field');
 clearButton === null || clearButton === void 0 ? void 0 : clearButton.addEventListener('click', clearOutput);
 sendButton === null || sendButton === void 0 ? void 0 : sendButton.addEventListener('click', showOutput);
 function showOutput() {
     if (!ageInput || !outputField)
         return;
     outputField.replaceChildren();
-    var ageValue = ageInput.value.trim();
+    const ageValue = ageInput.value.trim();
     if (!ageValue) {
         displayOutput(outputs.emptyInput);
         return;
     }
-    var age = Number(ageValue);
+    const age = Number(ageValue);
     if (isNaN(age)) {
         displayOutput('Invalid age value');
         return;
     }
-    var _a = determineOutput(age), text = _a.text, icon = _a.icon;
+    const { text, icon } = determineOutput(age);
     displayOutput(text, icon);
     ageInput.value = '';
 }
@@ -60,9 +62,9 @@ function determineOutput(age) {
     }
 }
 function displayOutput(text, iconClass) {
-    var outputP = document.createElement('p');
+    const outputP = document.createElement('p');
     if (iconClass) {
-        var icon = document.createElement('i');
+        const icon = document.createElement('i');
         icon.className = iconClass;
         outputP.appendChild(icon);
     }
