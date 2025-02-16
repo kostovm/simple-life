@@ -1,5 +1,3 @@
-console.log('Still works!')
-
 type Output = {
     text: string,
     icon: string
@@ -22,6 +20,12 @@ const outputField = document.querySelector('.output-field') as HTMLElement | nul
 
 clearButton?.addEventListener('click', clearOutput);
 sendButton?.addEventListener('click', showOutput);
+ageInput?.addEventListener('keydown', (event) => {
+    if(event.key === 'Enter'){
+        showOutput();
+    }
+})
+
 
 function showOutput(): void{
 

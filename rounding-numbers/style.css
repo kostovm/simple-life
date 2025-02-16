@@ -1,36 +1,11 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    background-color: rgb(131, 2, 2);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.wrapper {
-    width: 300px;
-    padding: 20px;
-    margin-top: 25px;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.6), 0px 4px 8px rgba(0, 0, 0, 0.4);
-}
+@import url('../shared.css');
 
 .output-field {
+    border: 2px dashed #0078d7;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 50px;
-    background-color: #f9f9f9;
-    border: 2px dashed #ddd;
-    border-radius: 8px;
-    margin-bottom: 15px;
-    text-align: center;
 }
 
 .output-field .result {
@@ -40,24 +15,10 @@ body {
 }
 
 .input-field {
-    display: flex;
     flex-direction: column;
-    gap: 10px;
 }
 
-.number-input {
-    width: 100%;
-    padding: 10px;
-    border: 2px solid #ddd;
-    border-radius: 6px;
-    font-size: 16px;
-}
-
-.number-input:focus {
-    border-color: #007bff;
-    outline: none;
-    box-shadow: 0px 0px 4px rgba(0, 123, 255, 0.4);
-}
+/* Unique for this app */
 
 .precision-section {
     display: flex;
@@ -83,45 +44,18 @@ body {
     color: #333;
 }
 
+/* End of unique */
+
 button {
     width: 40px;
     height: 40px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 6px;
-    font-size: 18px;
     font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 button:hover {
-    background-color: #0056b3;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 button:active {
     background-color: #003d80;
-}
-
-button:disabled {
-    background-color: #ccc;
-    color: #999;
-    cursor: not-allowed;
-    box-shadow: none;
-}
-
-.description {
-    display: flex;
-    flex-direction: column;
-    border:7px dashed orange;
-    margin-top: 10px;
-    padding: 5px;
-    background-color: yellow;
-    gap: 5px;
-}
-
-.description span {
-    font-weight: bold;
 }
