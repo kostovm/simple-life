@@ -1,0 +1,32 @@
+@import url('../shared.css');
+
+.numbers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.numbers div {
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1.2em;
+    text-align: center;
+    min-width: 40px;
+    background-color: #ddd;
+    border: 2px solid #bbb;
+}
+
+.numbers .divisible {
+    background-color: #90ee90;
+    border: 2px solid #4caf50;
+    font-weight: bold;
+}
+
+.numbers .biggest-divisible {
+    background-color: #4caf50;
+    border: 2px solid #2e7d32;
+    font-weight: bold;
+    color: white;
+    box-shadow: 0 0 10px rgba(76, 175, 80, 0.8);
+}

@@ -31,10 +31,6 @@
     transition: border-color 0.3s ease-in-out;
 }
 
-button {
-    padding: 8px 12px;
-}
-
 button:hover {
     transform: scale(1.05);
 }
@@ -44,14 +40,6 @@ button:active {
 }
 
 /* Unique for the app */
-
-.clear {
-    background-color: #e94c4c;
-}
-
-.clear:hover {
-    background-color: #c42c2c;
-}
 
 .output-field i {
     font-size: 1em;

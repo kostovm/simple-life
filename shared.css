@@ -58,6 +58,7 @@ button {
     background-color: #0078d7;
     color: #fff;
     transition: background-color 0.3s ease-in-out, transform 0.2s;
+    padding: 8px 12px;
 }
 
 button:hover {
@@ -69,6 +70,14 @@ button:disabled {
     background-color: #ccc;
     cursor: not-allowed;
     box-shadow: none;
+}
+
+.clear {
+    background-color: #e94c4c;
+}
+
+.clear:hover {
+    background-color: #c42c2c;
 }
 
 .description {
