@@ -8,6 +8,7 @@ body {
     background-color: rgb(131, 2, 2);
     font-family: Arial, sans-serif;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -92,4 +93,29 @@ button:disabled {
 
 .description span {
     font-weight: bold;
+}
+
+.back-button {
+    display: inline-block;
+    padding: 15px 30px;
+    margin-top: 2em;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    background: linear-gradient(145deg, #ff4b2b, #ff416c);
+    color: white;
+    border-radius: 50px;
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.2), -4px -4px 6px rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease;
+}
+
+.back-button:hover {
+    background: linear-gradient(145deg, #ff416c, #ff4b2b);
+    box-shadow: 8px 8px 12px rgba(0, 0, 0, 0.3), -8px -8px 12px rgba(255, 255, 255, 0.3);
+    transform: translateY(-3px);
+}
+
+.back-button:focus {
+    outline: none;
 }
