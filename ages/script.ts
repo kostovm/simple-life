@@ -1,3 +1,5 @@
+import { getAppInfo } from "../utils.js";
+
 type Output = {
     text: string,
     icon: string
@@ -17,6 +19,17 @@ const ageInput = document.getElementById('age') as HTMLInputElement | null;
 const sendButton = document.getElementById('send') as HTMLInputElement | null;
 const clearButton = document.getElementById('clear') as HTMLElement | null;
 const outputField = document.querySelector('.output-field') as HTMLElement | null;
+const title = document.querySelector('.title') as HTMLElement | null;
+
+getAppInfo('ages').then(info => {
+    if(info){
+        title? title.textContent = info.name : console.log('Error: Title not found');
+        console.log(info.note);
+        console.log(info.howToUse);
+    } else {
+        console.log('App not found!')
+    }
+});
 
 clearButton?.addEventListener('click', clearOutput);
 sendButton?.addEventListener('click', showOutput);
@@ -24,7 +37,7 @@ ageInput?.addEventListener('keydown', (event) => {
     if(event.key === 'Enter'){
         showOutput();
     }
-})
+});
 
 
 function showOutput(): void{
