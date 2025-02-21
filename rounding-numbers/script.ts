@@ -6,6 +6,7 @@ const precisionDisplay = document.getElementById('precisionNumber') as HTMLSpanE
 const decrementButton = document.getElementById('decrement') as HTMLButtonElement | null;
 const incrementButton = document.getElementById('increment') as HTMLButtonElement | null;
 const title = document.querySelector('.title') as HTMLElement | null;
+const [noteText, howToText] = document.querySelectorAll<HTMLSpanElement>('.description-text');
 
 const MIN_PRECISION = 0;
 const MAX_PRECISION = 15;
@@ -17,8 +18,8 @@ incrementButton?.addEventListener('click', () => adjustPrecision(1));
 getAppInfo('rounding-numbers').then(info => {
     if(info){
         title? title.textContent = info.name : console.log('Error: Title not found');
-        console.log(info.note);
-        console.log(info.howToUse);
+        noteText? noteText.textContent = info.note : console.log('Error: Note not found');
+        howToText? howToText.textContent = info.howToUse : console.log('Error: Description not found');
     } else {
         console.log('App not found!')
     }
