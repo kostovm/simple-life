@@ -1,4 +1,4 @@
-import { getAppInfo } from "../utils.js";
+import { displayAppInfo } from "../utils.js";
 
 type Output = {
     text: string,
@@ -20,19 +20,6 @@ const sendButton = document.getElementById('send') as HTMLInputElement | null;
 const clearButton = document.getElementById('clear') as HTMLElement | null;
 const outputField = document.querySelector('.output-field') as HTMLElement | null;
 
-const title = document.querySelector('.title') as HTMLElement | null;
-const [noteText, howToText] = document.querySelectorAll<HTMLSpanElement>('.description-text');
-
-getAppInfo('ages').then(info => {
-    if(info){
-        title? title.textContent = info.name : console.log('Error: Title not found');
-        noteText? noteText.textContent = info.note : console.log('Error: Note not found');
-        howToText? howToText.textContent = info.howToUse : console.log('Error: Description not found');
-    } else {
-        console.log('App not found!')
-    }
-});
-
 clearButton?.addEventListener('click', clearOutput);
 sendButton?.addEventListener('click', showOutput);
 ageInput?.addEventListener('keydown', (event) => {
@@ -40,6 +27,8 @@ ageInput?.addEventListener('keydown', (event) => {
         showOutput();
     }
 });
+
+displayAppInfo('ages');
 
 
 function showOutput(): void{

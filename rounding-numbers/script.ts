@@ -1,4 +1,4 @@
-import { getAppInfo } from "../utils.js";
+import { displayAppInfo } from "../utils.js";
 
 const numberInput = document.getElementById('number-input') as HTMLInputElement | null;
 const numberOutput = document.querySelector('.output-field') as HTMLElement | null;
@@ -15,15 +15,7 @@ numberInput?.addEventListener('input', handleNumberInput);
 decrementButton?.addEventListener('click', () => adjustPrecision(-1));
 incrementButton?.addEventListener('click', () => adjustPrecision(1));
 
-getAppInfo('rounding-numbers').then(info => {
-    if(info){
-        title? title.textContent = info.name : console.log('Error: Title not found');
-        noteText? noteText.textContent = info.note : console.log('Error: Note not found');
-        howToText? howToText.textContent = info.howToUse : console.log('Error: Description not found');
-    } else {
-        console.log('App not found!')
-    }
-});
+displayAppInfo('rounding-numbers');
 
 function handleNumberInput(): void {
     if (!numberInput || !numberOutput || !precisionDisplay) return
