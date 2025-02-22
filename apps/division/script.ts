@@ -1,4 +1,4 @@
-import { displayAppInfo } from "../utils.js";
+import { displayAppInfo } from "../../shared/utils.js";
 
 const numberInputDivision = document.getElementById('number') as HTMLInputElement | null;
 const clearButtonDivision = document.getElementById('clear') as HTMLButtonElement | null;

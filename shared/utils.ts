@@ -7,7 +7,7 @@ type AppInfo = {
 
 async function getAppInfo(appName: string): Promise<AppInfo | null> {
     try {
-        const response = await fetch('../app-info.json');
+        const response = await fetch('../../shared/app-info.json');
         const data: AppInfo[] = await response.json();
         const appInfo = data.find(app => app.folder === appName);
 
@@ -20,6 +20,8 @@ async function getAppInfo(appName: string): Promise<AppInfo | null> {
 }
 
 export async function displayAppInfo(appName: string) {
+
+    console.log('App info util works!!!')
 
     const info = await getAppInfo(appName);
 

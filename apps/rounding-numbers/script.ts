@@ -1,12 +1,12 @@
-import { displayAppInfo } from "../utils.js";
+import { displayAppInfo } from "../../shared/utils.js";
+
+console.log('Rounding script works')
 
 const numberInput = document.getElementById('number-input') as HTMLInputElement | null;
 const numberOutput = document.querySelector('.output-field') as HTMLElement | null;
 const precisionDisplay = document.getElementById('precisionNumber') as HTMLSpanElement | null;
 const decrementButton = document.getElementById('decrement') as HTMLButtonElement | null;
 const incrementButton = document.getElementById('increment') as HTMLButtonElement | null;
-const title = document.querySelector('.title') as HTMLElement | null;
-const [noteText, howToText] = document.querySelectorAll<HTMLSpanElement>('.description-text');
 
 const MIN_PRECISION = 0;
 const MAX_PRECISION = 15;

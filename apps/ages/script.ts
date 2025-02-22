@@ -1,4 +1,4 @@
-import { displayAppInfo } from "../utils.js";
+import { displayAppInfo } from "../../shared/utils.js";
 
 type Output = {
     text: string,
@@ -29,7 +29,6 @@ ageInput?.addEventListener('keydown', (event) => {
 });
 
 displayAppInfo('ages');
-
 
 function showOutput(): void{
 

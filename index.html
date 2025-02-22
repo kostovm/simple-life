@@ -3,12 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Simple life</title>
 </head>
 <body>
-    <h1>It is a simple life</h1>
-    <a href="/division/index.html">Division app (shows divisors of a number)</a></br>
-    <a href="/rounding-numbers/index.html">Rounding app (enter floating point number, round it nicely)</a></br>
-    <a href="/ages/index.html">Ages app (enter age, see if the person is a baby)</a>
+    <div class="wrapper">
+        <p class="title">It is a simple life</p>
+
+        <section class="choose">
+            <label for="app-select">Select an app</label>
+            <select name="apps" id="app-select">
+                <option value="">--Please select an app--</option>
+                <option value="division">Division app</option>
+                <option value="rounding-numbers">Rounding app</option>
+                <option value="ages">Ages app</option>
+            </select>
+        </section>
+        <button class="try" id="try" disabled>Try it!!!</button>
+        <div class="description">
+            <p><span class="description-label">Note: </span><span class="note-text">App select</span></p>
+            <p><span class="description-label">How to use: </span><span class="description-text">Select the app you want to see. Try it!</span></p>
+        </div>
+    </div>
+    <script type="module" src="dist/script.js"></script>
 </body>
 </html>

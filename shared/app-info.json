@@ -1,0 +1,26 @@
+[
+  {
+    "name": "It's a simple life",
+    "folder": "default",
+    "note": "App select",
+    "howToUse": "Select the app you want to see. Try it!"
+  },
+    {
+    "name": "Ages",
+    "folder": "ages",
+    "note": "Very important app that will tell you if a 99 years old person is a baby or an adult.",
+    "howToUse": "Enter the persons age. Check if they are baby, adult or elderly. Be impressed."
+  },
+  {
+    "name": "Division",
+    "folder": "division",
+    "note": "Very important app that checks if a number is divisible to 2, 3, 6, 7 or 10.",
+    "howToUse": "Enter a number in the input field and see if it is divisible to one or more of the numbers above. Be impressed."
+  },
+  {
+    "name": "Rounding numbers",
+    "folder": "rounding-numbers",
+    "note": "Very important app that will round any floating point number to a given precision.",
+    "howToUse": "Enter a number in the input field and see if it is divisible to one or more of the numbers above. Be impressed."
+  }
+]
