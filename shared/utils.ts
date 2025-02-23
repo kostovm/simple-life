@@ -21,8 +21,6 @@ async function getAppInfo(appName: string): Promise<AppInfo | null> {
 
 export async function displayAppInfo(appName: string) {
 
-    console.log('App info util works!!!')
-
     const info = await getAppInfo(appName);
 
     if(!info){

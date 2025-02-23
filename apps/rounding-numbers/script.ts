@@ -1,7 +1,5 @@
 import { displayAppInfo } from "../../shared/utils.js";
 
-console.log('Rounding script works')
-
 const numberInput = document.getElementById('number-input') as HTMLInputElement | null;
 const numberOutput = document.querySelector('.output-field') as HTMLElement | null;
 const precisionDisplay = document.getElementById('precisionNumber') as HTMLSpanElement | null;

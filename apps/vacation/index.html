@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Vacantion</title>
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <p class="title"></p>
+
+        <section class="choose" id="selection-section">
+            <label for="day-select">Choose a day:</label>
+            <select name="days" id="day-select">
+                <option value="">--Please choose a day--</option>
+                <option value="friday">Friday</option>
+                <option value="saturday">Saturday</option>
+                <option value="sunday">Sunday</option>
+            </select>
+
+            <label for="type-select">Choose a group type:</label>
+            <select name="types" id="type-select">
+                <option value="">--Please choose a group type--</option>
+                <option value="regular">Regular</option>
+                <option value="business">Business</option>
+                <option value="students">Students</option>
+            </select>
+
+            <label for="group-size">Choose a group size:</label>
+            <input type="number" class="number-input" id="group-size" min="1" value="1">
+        </section>
+
+        <section class="prices">
+            <p>Single price: <span id="single">0.00$</span></p>
+            <p>Discount: <span class="discount type" id="discount-text">No discount</span><span id="discount-sum">(-0.00$)</span></p>
+            <p>Total price: <span id="total">0.00$</span></p>
+        </section>
+
+        <section class="final">
+            <button disabled id="book">Book vacation</button>
+        </section>
+
+        <div class="description">
+            <p><span class="description-label">Note: </span><span class="note-text">App select</span></p>
+            <p><span class="description-label">How to use: </span><span class="description-text">Select the app you want to see. Try it!</span></p>
+        </div>
+    </div>
+    <a href="../../" class="back-button">Back to the main page</a>
+    <script type="module" src="../../dist/apps/vacation/script.js"></script>
+</body>
+
+</html>

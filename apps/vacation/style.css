@@ -1,0 +1,30 @@
+@import url('../../shared/shared.css');
+
+.prices {
+    border-top: 2px solid black;
+    padding-top: 10px;
+}
+
+.prices p {
+    margin: 15px 0;
+    font-size: 16px;
+    color: #444;
+    display: flex;
+    justify-content: space-between;
+}
+
+.prices span {
+    font-weight: bold;
+    color: #222;
+}
+
+.prices .discount {
+    font-style: italic;
+    color: #d9534f;
+}
+
+.final {
+    margin: 25px 0 5px 0;
+    display: flex;
+    justify-content: end;
+}

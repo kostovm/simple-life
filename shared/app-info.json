@@ -22,5 +22,11 @@
     "folder": "rounding-numbers",
     "note": "Very important app that will round any floating point number to a given precision.",
     "howToUse": "Enter a number in the input field and see if it is divisible to one or more of the numbers above. Be impressed."
+  },
+  {
+    "name": "Vacation",
+    "folder": "vacation",
+    "note": "Very important app that calculates the price of a vacation.",
+    "howToUse": "Select the type and the size of your group. Choose a day. Be impressed."
   }
 ]
