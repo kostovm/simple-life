@@ -28,5 +28,11 @@
     "folder": "vacation",
     "note": "Very important app that calculates the price of a vacation.",
     "howToUse": "Select the type and the size of your group. Choose a day. Be impressed."
+  },
+  {
+    "name": "Leap Year",
+    "folder": "leap-year",
+    "note": "Very important app that checks if an year is a leap.",
+    "howToUse": "Enter the year you want to check ot try random. Be impressed."
   }
 ]

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Leap Year</title>
+</head>
+<body>
+    <div class="wrapper">
+        <p class="title"></p>
+        <div class="input-field">
+            <input type="number" class="number-input" id="year" placeholder="Enter year!" step="1" value="0">
+            <div class="buttons">
+                <button class="send" id="check">Check</button>
+                <button class="send" id="random">Check a random year</button>
+            </div>
+        </div>
+        <div class="result-field" id="result-field">
+            <p class="result">Not a valid year!</p>
+        </div>
+        <div class="description">
+            <p><span class="description-label">Note: </span><span class="note-text"></span></p>
+            <p><span class="description-label">How to use: </span><span class="description-text"></span></p>
+        </div>
+    </div>
+    <a href="../../" class="back-button">Back to the main page</a>
+    <script type="module" src="../../dist/apps/leap-year/script.js"></script>
+</body>
+</html>

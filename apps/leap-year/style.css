@@ -1,0 +1,39 @@
+@import url('../../shared/shared.css');
+
+.input-field {
+    flex-direction: column;
+}
+
+.result-field {
+    padding: 10px;
+    margin-top: 15px;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+    display: none;
+}
+
+.result-field.invalid {
+    display: block;
+    background-color: #ffdddd;
+    border: 1px solid #ff5c5c;
+    color: #d60000;
+}
+
+.result-field.yes {
+    display: block;
+    background-color: #ddffdd;
+    border: 3px solid #4caf50;
+    color: #2e7d32;
+}
+
+.result-field.no {
+    display: block;
+    background-color: #ffffcc;
+    border: 1px solid #ffeb3b;
+    color: #bfa000;
+}
+
+.result {
+    font-size: 1.1em;
+}
