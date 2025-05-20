@@ -6,7 +6,7 @@ A **multi-page collection** of simple but useful JavaScript applications, rewrit
 - **Pure Vanilla JavaScript & TypeScript** – No frameworks or libraries, just raw JS/TS.
 - **Interactive UI** – Originally designed for console execution, now adapted for the web.
 - **Scalable & Modular Structure** – As the project grows, improvements like **shared CSS** and **utility functions** are introduced to keep the structure clean and efficient.
-- **Live Demo Available** – Try it out: [ttrtt.site](https://ttrtt.site)
+- **Live Demo Available** – Try it out: [a-simple-life.eu](https://a-simple-life.eu/)
 
 ## 🎯 Why This Project?
 Instead of relying on frameworks, this project reinforces **core JavaScript and TypeScript** skills. Understanding vanilla JS deeply makes learning frameworks like **Angular** much easier in the long run.
