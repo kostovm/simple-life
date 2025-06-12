@@ -34,5 +34,11 @@
     "folder": "leap-year",
     "note": "Very important app that checks if an year is a leap.",
     "howToUse": "Enter the year you want to check ot try random. Be impressed."
+  },
+    {
+    "name": "Print and sum",
+    "folder": "print-and-sum",
+    "note": "Very important app that takes start and end number and then prints all the number between them and calculates the sum of all.",
+    "howToUse": "Enter the start and end number. Be impressed."
   }
 ]
