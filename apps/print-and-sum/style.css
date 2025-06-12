@@ -1,0 +1,29 @@
+@import url('../../shared/shared.css');
+
+.sum {
+    border: 2px solid black;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.sum p {
+    margin: 15px 0;
+    font-size: 16px;
+    color: #444;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sum span {
+    font-weight: bold;
+    color: #222;
+}
+
+.output-field {
+    border: 2px dashed #0078d7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    padding: 3px;
+}
