@@ -20,6 +20,8 @@ function clearAll(){
     endInput!.value = "";
     sumOutput!.textContent = "";
     stringOutputField!.textContent = "";
+
+    enablePrint();
 }
 
 function setMinEndNum (): void{
@@ -63,5 +65,6 @@ function printNumbers(){
         }
     }
 
-    console.log('Sum: ' + sum + ', Output: ' + stringOutput);
+    sumOutput!.textContent = String(sum);
+    stringOutputField!.textContent = stringOutput;
 }
